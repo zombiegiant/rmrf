@@ -1,0 +1,139 @@
+body
+{
+	background: white;
+}
+header
+{
+	background-color: rgba(143, 201, 190, 0.5);
+	background-image: url(miha.jpg);
+	background-size: 100%;
+}
+#ContNum1
+{
+	background-color: rgba(9, 8, 15, 0.1);
+	border: 1px solid rgba(0,0,0,0.1);
+}
+#menu
+{
+	background-color: #ccb695;
+}
+#ttt
+{
+	background-color: #bda9de;
+}
+
+
+.navcolor
+{
+	background: #6aa398;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.87);
+}
+
+.naw
+{
+	color: #244587 !important;
+	-webkit-transition: .3s linear !important;
+}
+.naw:hover
+{
+	color: #5b7fc7 !important;
+	-webkit-transition: .3s linear !important;
+}
+.navv
+{
+	color: white;
+}
+.nnn
+{
+	color: #a1b2d4 !important;
+	display: inline-block;
+    line-height: 1;
+    text-decoration:none;
+    cursor: pointer;
+    font-weight: 500;
+}
+.nnn:hover
+{
+	color: white !important;
+	-webkit-transition: .3s linear !important;
+}
+.ctr
+{
+	width: 500px;
+	margin: 0 auto;
+	text-align: left;
+}
+.fff
+{
+	position: absolute;
+	right: 10px;
+}
+.ccc
+{
+	margin: 0 auto;
+}
+li
+{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+li:hover
+{
+	color: white;
+}
+.look_1
+{
+	background-color: rgba(0,0,0,0);
+	border: 1px solid rgba(255,255,255,0.3);
+	color: white;
+}
+.look_1:hover
+{
+	border: 1px solid rgba(255,255,255,0);
+	color: white;
+	background-color: #3e69a8;
+}
+.nav-link:after {
+    background-color: #a1b2d4;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+.nnn:hover:after,
+.nnn:focus:after {
+    width: 100%;
+}
+.PartPr
+{
+	position: relative;
+	padding-top: 3px;
+	height: 57px;
+	width: 57px;
+	text-align: left;
+	font-size: 20px;
+	color: white;
+	display: block;
+}
+.user
+{
+	margin-top: 0px;
+	position: relative;
+	padding-top: 15px;
+	height: 57px;
+	width: 200px;
+	text-align: left;
+	font-size: 20px;
+	color: #244587;
+	display: block;
+
+}
+.users
+{
+	position: relative;
+	margin-top: 10px;
+	margin-left: 10px;
+}
