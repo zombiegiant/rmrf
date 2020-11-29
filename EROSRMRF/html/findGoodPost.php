@@ -17,21 +17,21 @@ $countMinLike=$countMinLike['count_min_like'];
 function getSelectFindWorker($str,$countMinLike){
 
     $result="Select  post_rat.id as id, id_user, name_post, short_text, long_text, data_create, img,
- sum(like_expert_count.count_like_expert) as count_all_like
- FROM post_rat inner join tags_for_post_rat on  post_rat.id=tags_for_post_rat.id_post_rat
-    inner join tags on tags_for_post_rat.id_tag=tags.id
-    inner join like_expert_count on like_expert_count.id_post_rat=post_rat.id
-    WHERE ";
+sum(like_expert_count.count_like_expert ) as count_all_like
+FROM post_rat
+
+inner join like_expert_count on like_expert_count.id_post_rat=post_rat.id
+Where ";
     $arrayStr=explode(" ",$str);
     $i=0;
     foreach ($arrayStr as $value){
         if($i!=0) $result.="AND ";
-        $result.="tags.name like '%$value%' ";
+        $result.="name_post like '%$value%' ";
         $i++;
     }
     $result.="
     group by post_rat.id
-    HAVING SUM(like_expert_count.count_like_expert) > $countMinLike
+    HAVING SUM(like_expert_count.count_like_expert) >= $countMinLike
     order by post_rat.data_create desc;
     ;";
 
@@ -86,7 +86,7 @@ while($row = $res->fetch_assoc()) {
                 </div>
                 <div class='col-md-6 text-justify'>
                     <br>
-                    <p>Дата создания: <br>$row[data_create]<br><br>Количество <br>лайков от экспертов $row[count_all_like]</p>                          
+                    <p>Дата создания: <br>$row[data_create]<br><br>Количество <br>лайков от экспертов $row[count_all_like]<br><br>Прошло проверку</p>                          
                 </div>
             </div>
             <div class='row justify-content-end'>

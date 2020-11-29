@@ -29,7 +29,7 @@ echo '
 <div class="container">
     <div class="row">
         <div class="col-md-8 offset-md-2">
-            <h4 class="text-center">Предложения по рационализации</h4>
+            <h4 class="text-center">Набравшие балл предложения по рационализации</h4>
         </div>
     </div>        
    <br>

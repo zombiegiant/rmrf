@@ -132,15 +132,15 @@ if(!isset($_POST['register'])) {
     }
 
 
-    echo '<br><div class="container" id="ContNum1">
-
+    echo '<br><div class="container" style="min-height: 700px;" id="ContNum1">
+<br><br><br><br><br><br><br>
  <br><h2 style="text-align: center;">Регистрация прошла успешно</h2> <br>  
     </div>
     <br>
 
     ';
     echo "<script type='text/javascript'>
-        setTimeout('location.replace(\"$domain\")',5000);
+        setTimeout('location.replace(\"$domain\")',3000);
         </script>";
 }
 

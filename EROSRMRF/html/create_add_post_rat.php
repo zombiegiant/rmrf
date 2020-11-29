@@ -41,7 +41,7 @@ $mysqli = ConnectDB();
 if (!$res=$mysqli->query("INSERT INTO post_rat (id_user, name_post, short_text, long_text, img) VALUES ('$_SESSION[id]', '$_POST[name]', '$_POST[short_text]', '$_POST[long_text]', '$img')")) {
     echo "Не удалось вызвать хранимую процедуру: (" . $mysqli->errno . ") " . $mysqli->error;
 } else
-    echo '<br><div class="container" id="ContNum1">
+    echo '<br><div class="container" style="min-height: 700px;" id="ContNum1">
           <br><h2 style="text-align: center;">Предложение успешно добавлено</h2> <br>  
           </div><br>';
 $insert_id=$mysqli->insert_id;
